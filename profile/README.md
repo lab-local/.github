@@ -1,9 +1,6 @@
 # LAB.LOCAL
 
-## A hub for hybrid infrastructure engineering.
-
-Infra/Platform · Performance · Security — federated Hybrid Zero Trust Architecture, performance tuning, security, and technical books for the Spanish‑speaking community.
-
+Fast & Secure by Design. Infra/Platform · Performance · Security — engineering, tuning, security tools, and books for the Spanish‑speaking community.
 - [Explore the infrastructure](https://github.com/lab-local/infrastructure)
 - [Discover Silent Audit](https://github.com/lab-local/silent-audit)
 - [Browse technical books](https://github.com/lab-local/book-git-mastery)
