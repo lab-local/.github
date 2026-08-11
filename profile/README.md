@@ -1,6 +1,8 @@
 # LAB.LOCAL
 
-Fast & Secure by Design. Infra/Platform · Performance · Security — engineering, tuning, security tools, and books for the Spanish‑speaking community.
+> **Fast & Secure by Design.**  
+
+Infra/Platform · Performance · Security — engineering a federated Hybrid Zero Trust Architecture with a $12/month OpEx, developing security tools, and writing technical books for the Spanish‑speaking community.
 - [Explore the infrastructure](https://github.com/lab-local/infrastructure)
 - [Discover Silent Audit](https://github.com/lab-local/silent-audit)
 - [Browse technical books](https://github.com/lab-local/book-git-mastery)
