@@ -1,3 +1,10 @@
+<div align="center" style="overflow: hidden; max-height: 220px;">
+  <img src="https://raw.githubusercontent.com/lab-local/.github/main/profile/venti-views-1cqIcrWFQBI-unsplash.png" 
+       alt="LAB.LOCAL — Infraestructura y contenedores" 
+       width="100%" 
+       style="object-fit: cover; object-position: center; margin-top: -20%; margin-bottom: -20%;">
+</div>
+
 # LAB.LOCAL
 
 > **Fast & Secure by Design.**  
