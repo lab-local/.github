@@ -33,7 +33,7 @@
 - **Automatización de flujos:** n8n.
 
 #### <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Seguridad, Secretos & Redes
-- **DNS & Servicios Internos:** DNSMASQ.
+- **DNS & DHCP:** DNSMASQ.
 - **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
 - **Runtime Security:** eBPF (Tetragon/Falco).
