@@ -21,19 +21,23 @@
 ### <img src="https://api.iconify.design/bi/cpu.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Core Stack & Pilares Técnicos
 
 #### <img src="https://api.iconify.design/bi/server.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Plataforma, Virtualización & Contenedores
-- **Virtualización:** Proxmox VE (Debian), Incus (Ubuntu), LXC, KVM/QEMU.
-- **Contenedores:** Podman + Quadlets, containerd, Docker.
-- **Orquestación:** Kubernetes (K3s / MicroK8s).
-- **Host OS:** Debian, Ubuntu, Alpine Linux.
+- **Virtualización:** Proxmox VE (Debian), Incus (Ubuntu), LXC, KVM/QEMU (VMs).
+- **Contenedores:** Podman + Quadlets, containerd, Docker.  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Podman es el runtime prioritario; Docker se usa solo cuando una herramienta lo requiere explícitamente.</small>*
+- **Orquestación:** Kubernetes (K3s / MicroK8s).  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>K3s es el orquestador principal; MicroK8s se usa solo para escenarios específicos.</small>*
+- **Host OS:** Debian, Ubuntu, Alpine Linux.  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Alpine Linux es el OS base prioritario para LXC, VMs, Podman y Docker siempre que sea técnicamente posible.</small>*
 
 #### <img src="https://api.iconify.design/bi/code-slash.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Automatización, IaC & GitOps
 - **IaC:** OpenTofu, Ansible.
 - **Gestión de configuración:** Ansible + SSH.
 - **GitOps:** Flux CD.
-- **CI/CD:** Forgejo + Woodpecker CI.
+- **CI/CD:** Forgejo Actions + Woodpecker CI.
 - **Automatización de flujos:** n8n.
 
 #### <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Seguridad, Secretos & Redes
+- **DNS & Servicios Internos:** DNSMASQ.
 - **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
 - **Runtime Security:** eBPF (Tetragon/Falco).
@@ -44,7 +48,6 @@
 - **Bases de datos:** PostgreSQL (CloudNativePG), SQLite, MariaDB, Valkey.
 - **Almacenamiento:** MinIO, Incus Storage Bucket, NFSv4, RAID1/5.
 - **Mensajería & Event Bus:** NATS, MQTT.
-- **DNS & Servicios Internos:** DNSMASQ.
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
 - **Métricas & Logs:** VictoriaMetrics, OpenObserve, Beszel, Kener, Rsyslog, syslog-ng.
@@ -56,7 +59,7 @@
 - **IA Local:** LocalAI, Fabric, MCP Server.
 - **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
 - **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
-- **FinOps:** Arquitecturas de $12/mes OpEx.
+- **FinOps:** Arquitecturas de **$12/mes de OpEx total** — 2 Droplets de DigitalOcean ($6 c/u) + GCP y Cloudflare Free Tier ($0).
 
 ---
 
