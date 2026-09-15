@@ -1,3 +1,4 @@
+
 <div align="center" style="overflow: hidden; max-height: 220px;">
   <img src="https://raw.githubusercontent.com/lab-local/.github/main/profile/venti-views-1cqIcrWFQBI-unsplash.png" 
        alt="LAB.LOCAL — Infraestructura y contenedores" 
@@ -6,11 +7,6 @@
 </div>
 
 # LAB.LOCAL
-
-> **Fast & Secure by Design.**  
-> Herramientas *open source* y libros técnicos para la comunidad *tech* en español.
-
----
 
 ### <img src="https://api.iconify.design/bi/terminal.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> ¿Qué es LAB.LOCAL?
 
@@ -83,3 +79,9 @@
 *(Los títulos y accesos se irán liberando progresivamente)*
 
 </details>
+
+---
+
+> *Fast & Secure by Design.*  
+> *Herramientas **open source** y libros técnicos para la comunidad tech en español.*  
+> *Construido desde cero, con disciplina de ingeniería y pasión por compartir.*
