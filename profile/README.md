@@ -20,13 +20,43 @@
 
 ### <img src="https://api.iconify.design/bi/cpu.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Core Stack & Pilares Técnicos
 
-- <img src="https://api.iconify.design/bi/server.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **Plataforma & Virtualización:** Proxmox VE, Incus, LXC/KVM, Podman + Quadlets y K3s/MicroK8s.
-- <img src="https://api.iconify.design/bi/code-slash.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **IaC, GitOps & CI/CD:** OpenTofu, Ansible, Flux CD, Forgejo y Woodpecker CI.
-- <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **Seguridad, Secretos & Redes:** OpenBao, eBPF (*Tetragon/Falco*), WireGuard y Cloudflare.
-- <img src="https://api.iconify.design/bi/database.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **Persistencia & Datos:** PostgreSQL, SQLite, Valkey, Incus Storage Bucket / MinIO y NATS/MQTT.
-- <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **Observabilidad & Performance:** Beszel, Kener, Rsyslog, syslog-ng, OpenObserve, `perf`, `bpftrace` y `fio`.
-- <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **IA Soberana & Automatización:** LocalAI, Fabric y n8n.
-- <img src="https://api.iconify.design/bi/journal-text.svg?color=%237d8590" width="18" height="18" style="vertical-align: middle; margin-right: 6px;"> **Educación Soberana:** Autoría y publicación de **más de 25 manuales y libros técnicos** en español.
+#### <img src="https://api.iconify.design/bi/server.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Plataforma, Virtualización & Contenedores
+- **Virtualización:** Proxmox VE (Debian), Incus (Ubuntu), LXC, KVM/QEMU.
+- **Contenedores:** Podman + Quadlets, containerd, Docker.
+- **Orquestación:** Kubernetes (K3s / MicroK8s).
+- **Host OS:** Debian, Ubuntu, Alpine Linux.
+
+#### <img src="https://api.iconify.design/bi/code-slash.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Automatización, IaC & GitOps
+- **IaC:** OpenTofu, Ansible.
+- **Gestión de configuración:** Ansible + SSH.
+- **GitOps:** Flux CD.
+- **CI/CD:** Forgejo + Woodpecker CI.
+- **Automatización de flujos:** n8n.
+
+#### <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Seguridad, Secretos & Redes
+- **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
+- **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
+- **Runtime Security:** eBPF (Tetragon/Falco).
+- **Auditoría & Hardening:** Kali Linux, Lynis.
+- **Supply Chain Security:** SLSA, Sigstore, Trivy, Grype, GUAC, Bomctl.
+
+#### <img src="https://api.iconify.design/bi/database.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Persistencia, Datos & Mensajería
+- **Bases de datos:** PostgreSQL (CloudNativePG), SQLite, MariaDB, Valkey.
+- **Almacenamiento:** MinIO, Incus Storage Bucket, NFSv4, RAID1/5.
+- **Mensajería & Event Bus:** NATS, MQTT.
+- **DNS & Servicios Internos:** DNSMASQ.
+
+#### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
+- **Métricas & Logs:** VictoriaMetrics, OpenObserve, Beszel, Kener, Rsyslog, syslog-ng.
+- **Kernel Observability:** perf, eBPF, bpftrace, cgroups v2, tuned.
+- **Benchmarking:** fio, iperf3.
+- **Service Mesh:** Linkerd (mTLS, observabilidad).
+
+#### <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> IA Soberana & Servicios Cloud
+- **IA Local:** LocalAI, Fabric, MCP Server.
+- **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
+- **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
+- **FinOps:** Arquitecturas de $12/mes OpEx.
 
 ---
 
