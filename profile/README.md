@@ -36,7 +36,8 @@
 - **DNS & DHCP:** DNSMASQ.
 - **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
-- **Runtime Security:** eBPF (Tetragon/Falco).
+- **Runtime Security (LSM):** AppArmor, eBPF (Tetragon/Falco).  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>AppArmor es el LSM prioritario para confinamiento de aplicaciones; Tetragon/Falco se usa para detección y bloqueo de comportamiento anómalo en tiempo real.</small>*
 - **Auditoría & Hardening:** Kali Linux, Lynis.
 - **Supply Chain Security:** SLSA, Sigstore, Trivy, Grype, GUAC, Bomctl.
 
