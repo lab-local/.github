@@ -42,7 +42,7 @@
 
 #### <img src="https://api.iconify.design/bi/database.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Persistencia, Datos & Mensajería
 - **Bases de datos:** PostgreSQL (CloudNativePG), SQLite, MariaDB, Valkey.
-- **Almacenamiento:** MinIO, Incus Storage Bucket, NFSv4, RAID1/5.
+- **Almacenamiento:** MinIO, Incus Storage Bucket, NFSv4, RAID1/5/6.
 - **Mensajería & Event Bus:** NATS, MQTT.
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
