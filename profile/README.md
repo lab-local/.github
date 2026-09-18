@@ -10,7 +10,7 @@
 
 ### <img src="https://api.iconify.design/bi/terminal.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> ¿Qué es LAB.LOCAL?
 
-**LAB.LOC** es un laboratorio de ingeniería de infraestructura y plataformas de producción. Diseñamos, desplegamos y operamos arquitecturas híbridas orientadas a **máximo rendimiento, seguridad por diseño y soberanía tecnológica**, optimizando costos al límite sin comprometer la resiliencia.
+**LAB.LOCAL** es un laboratorio de ingeniería de infraestructura y plataformas de producción. Diseñamos, desplegamos y operamos arquitecturas híbridas orientadas a **máximo rendimiento, seguridad por diseño y soberanía tecnológica**, optimizando costos al límite sin comprometer la resiliencia.
 
 ---
 
@@ -56,7 +56,7 @@
 - **IA Local:** LocalAI, Fabric, MCP Server.
 - **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
 - **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
-- **FinOps:** Arquitecturas de **$12/mes de OpEx total** — 2 Droplets de DigitalOcean ($6 c/u) + GCP y Cloudflare Free Tier ($0).
+- **FinOps:** Disciplina financiera aplicada a la ingeniería — free tiers estratégicos, almacenamiento local eficiente y monitoreo activo para evitar sobreaprovisionamiento, sin comprometer resiliencia ni rendimiento.
 
 ---
 
