@@ -53,7 +53,7 @@
 - **Service Mesh:** Linkerd (mTLS, observabilidad).
 
 #### <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> IA Soberana & Servicios Cloud
-- **IA Local:** LocalAI, Fabric, MCP Server.
+- **IA Local:** OpenCode, MCP Server.
 - **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
 - **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
 - **FinOps:** Disciplina financiera aplicada a la ingeniería — free tiers estratégicos, almacenamiento local eficiente y monitoreo activo para evitar sobreaprovisionamiento, sin comprometer resiliencia ni rendimiento.
