@@ -47,13 +47,22 @@
 - **Mensajería & Event Bus:** NATS, MQTT.
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
-- **Métricas & Logs:** VictoriaMetrics, OpenObserve, Beszel, Kener, Rsyslog, syslog-ng.
-- **Kernel Observability:** perf, eBPF, bpftrace, cgroups v2, tuned.
-- **Benchmarking:** fio, iperf3.
+- **Métricas & Dashboards:** Beszel (vista 360 ligera), VictoriaMetrics, OpenObserve, Kener.  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Beszel: ideal para 1–50 máquinas, simplicidad extrema y bajo consumo. Prometheus + node_exporter: para escalar a cientos de servidores y consultas complejas con PromQL.</small>*
+- **Logs:** Rsyslog, syslog-ng.
+- **Kernel Observability:**
+  - *Profiling de CPU:* perf.
+  - *Tracing Ad-hoc:* bpftrace (sobre eBPF).
+  - *Tracing Preconstruido:* bcc.
+  - *Control de recursos:* cgroups v2.
+  - *Ajuste de sistema:* tuned.
+- **Benchmarking:** fio (disco), iperf3 (red).
 - **Service Mesh:** Linkerd (mTLS, observabilidad).
 
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>eBPF es la infraestructura de kernel (máquina virtual) que habilita herramientas como bpftrace y bcc; no se invoca directamente, sino a través de estas herramientas o bibliotecas de carga.</small>*
+
 #### <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> IA Soberana & Servicios Cloud
-- **IA Local:** OpenCode, MCP Server.
+- **IA Local:** OpenCode, NanoClaw, MCP Server.
 - **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
 - **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
 - **FinOps:** Disciplina financiera aplicada a la ingeniería — free tiers estratégicos, almacenamiento local eficiente y monitoreo activo para evitar sobreaprovisionamiento, sin comprometer resiliencia ni rendimiento.
