@@ -48,18 +48,21 @@
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
 - **Métricas & Dashboards:** Beszel (vista 360 ligera), VictoriaMetrics, OpenObserve, Kener.  
-  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Beszel: ideal para 1–50 máquinas, simplicidad extrema y bajo consumo. Prometheus + node_exporter: para escalar a cientos de servidores y consultas complejas con PromQL.</small>*
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Beszel: ideal para 1–50 máquinas, simplicidad extrema y bajo consumo. VictoriaMetrics: para escalar a cientos de servidores y consultas complejas con PromQL.</small>*
 - **Logs:** Rsyslog, syslog-ng.
 - **Kernel Observability:**
   - *Profiling de CPU:* perf.
-  - *Tracing Ad-hoc:* bpftrace (sobre eBPF).
-  - *Tracing Preconstruido:* bcc.
+  - *Tracing Ad-hoc:* **bpftrace** — una línea, sin compilar, respuesta inmediata.
+  - *Construcción en Go:* **cilium/ebpf** — herramientas portables con CO-RE, binario único sin CGO, integrables en Kubernetes.
+  - *Inspección & Skeletons:* **bpftool** — listar programas y mapas, generar skeletons.
   - *Control de recursos:* cgroups v2.
   - *Ajuste de sistema:* tuned.
 - **Benchmarking:** fio (disco), iperf3 (red).
 - **Service Mesh:** Linkerd (mTLS, observabilidad).
 
-<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>eBPF es la infraestructura de kernel (máquina virtual) que habilita herramientas como bpftrace y bcc; no se invoca directamente, sino a través de estas herramientas o bibliotecas de carga.</small>*
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>eBPF es la infraestructura de kernel (máquina virtual) que habilita herramientas como bpftrace y cilium/ebpf. El programa que corre en el kernel se escribe en C y se compila con clang; el loader que lo carga y gestiona se escribe en Go con cilium/ebpf. No se invoca directamente.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Fast & Secure by Design:</b> bpftrace para diagnóstico rápido en producción; cilium/ebpf en Go para construir herramientas estables y distribuibles; bpftool para inspección. La misma base eBPF sirve a rendimiento y seguridad — no como trade-off, sino como decisión de diseño.</small>*
 
 #### <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> IA Soberana & Servicios Cloud
 - **IA Local:** OpenCode, NanoClaw, MCP Server.
