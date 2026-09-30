@@ -36,10 +36,19 @@
 - **DNS & DHCP:** DNSMASQ.
 - **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
-- **Runtime Security (LSM):** AppArmor, eBPF (Tetragon/Falco).  
-  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>AppArmor es el LSM prioritario para confinamiento de aplicaciones; Tetragon/Falco se usa para detección y bloqueo de comportamiento anómalo en tiempo real.</small>*
-- **Auditoría & Hardening:** Kali Linux, Lynis.
+- **Runtime Security (LSM & eBPF):**
+  - *LSM:* AppArmor — confinamiento de aplicaciones.
+  - *eBPF runtime:* Tetragon, Falco — detección y bloqueo de comportamiento anómalo en tiempo real.
+  - *Diagnóstico:* bpftrace — tracing ad-hoc para investigación de incidentes.
+  - *Construcción:* cilium/ebpf (Go) — agentes de seguridad portables con CO-RE.
+- **Auditoría & Hardening:** Lynis, Kali Linux (pentesting).
 - **Supply Chain Security:** SLSA, Sigstore, Trivy, Grype, GUAC, Bomctl.
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>AppArmor es el LSM prioritario para confinamiento de aplicaciones. Tetragon/Falco usan eBPF para detección y bloqueo en runtime. bpftrace cubre el diagnóstico ad-hoc; cilium/ebpf permite construir agentes de seguridad en Go, portables entre kernels con CO-RE.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Supply Chain Security en runtime:</b> la cadena no termina cuando despliegas. eBPF permite observar y proteger la ejecución — binarios no esperados, conexiones anómalas, syscalls fuera de política. La misma base que optimiza el rendimiento protege el runtime.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Fast & Secure by Design:</b> seguridad y rendimiento no compiten. AppArmor confina, eBPF observa y bloquea, y el mismo stack que mide rendimiento protege el sistema. Diseño, no parche.</small>*
 
 #### <img src="https://api.iconify.design/bi/database.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Persistencia, Datos & Mensajería
 - **Bases de datos:** PostgreSQL (CloudNativePG), SQLite, MariaDB, Valkey.
