@@ -1,4 +1,3 @@
-
 <div align="center" style="overflow: hidden; max-height: 220px;">
   <img src="https://raw.githubusercontent.com/lab-local/.github/main/profile/venti-views-1cqIcrWFQBI-unsplash.png" 
        alt="LAB.LOCAL — Infraestructura y contenedores" 
@@ -7,7 +6,6 @@
 </div>
 
 # LAB.LOCAL
-
 ### <img src="https://api.iconify.design/bi/terminal.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> ¿Qué es LAB.LOCAL?
 
 **LAB.LOCAL** es un laboratorio de ingeniería de infraestructura y plataformas de producción. Diseñamos, desplegamos y operamos arquitecturas híbridas orientadas a **máximo rendimiento, seguridad por diseño y soberanía tecnológica**, optimizando costos al límite sin comprometer la resiliencia.
@@ -26,15 +24,20 @@
   <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Alpine Linux es el OS base prioritario para LXC, VMs, Podman y Docker siempre que sea técnicamente posible.</small>*
 
 #### <img src="https://api.iconify.design/bi/code-slash.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Automatización, IaC & GitOps
-- **IaC:** OpenTofu, Ansible.
-- **Gestión de configuración:** Ansible + SSH.
-- **GitOps:** Flux CD.
-- **CI/CD:** Forgejo Actions + Woodpecker CI.
-- **Automatización de flujos:** n8n.
+- **Control de versiones:** Forgejo (Git self-hosted).
+- **Provisioning (IaC):** OpenTofu — infraestructura declarativa.
+- **Gestión de configuración:** Ansible (sobre SSH) — estado deseado de los sistemas.
+- **GitOps:** Flux CD — sincronización continua desde Git.
+- **CI/CD:** Forgejo Actions, Woodpecker CI — pipelines autogestionados.
+- **Orquestación de workflows:** n8n — automatización entre servicios.
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>OpenTofu provisiona infraestructura; Ansible configura los sistemas resultantes; Flux CD sincroniza el estado desde Git. Cada capa tiene su rol y no se solapan.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Woodpecker CI: alternativa ligera a GitHub Actions, integrada con Forgejo.</small>*
 
 #### <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Seguridad, Secretos & Redes
 - **DNS & DHCP:** DNSMASQ.
-- **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnels, WAF, Zero Trust), HAProxy, Keepalived.
+- **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnel, WAF, Zero Trust), HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
 - **Runtime Security (LSM & eBPF):**
   - *LSM:* AppArmor — confinamiento de aplicaciones.
@@ -51,9 +54,20 @@
 <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Fast & Secure by Design:</b> seguridad y rendimiento no compiten. AppArmor confina, eBPF observa y bloquea, y el mismo stack que mide rendimiento protege el sistema. Diseño, no parche.</small>*
 
 #### <img src="https://api.iconify.design/bi/database.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Persistencia, Datos & Mensajería
-- **Bases de datos:** PostgreSQL (CloudNativePG), SQLite, MariaDB, Valkey.
-- **Almacenamiento:** MinIO, Incus Storage Bucket, NFSv4, RAID1/5/6.
-- **Mensajería & Event Bus:** NATS, MQTT.
+- **Bases de datos relacionales:** PostgreSQL (CloudNativePG en K8s), MariaDB.
+- **Bases de datos embebidas:** SQLite.
+- **Caché & estructuras en memoria:** Valkey.
+- **Almacenamiento de objetos:** MinIO e Incus Storage Bucket (S3-compatibles).
+- **Almacenamiento en red:** NFSv4.
+- **Almacenamiento físico:** RAID1/5/6.
+- **Mensajería & Event Bus:** NATS, MQTT (Mosquitto).
+- **Backup & replicación:** pgBackRest, restic, rsync.
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>CloudNativePG es el operador que gestiona PostgreSQL en Kubernetes; PostgreSQL es la base de datos subyacente. SQLite se usa para aplicaciones embebidas o edge; no compite con PostgreSQL.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Valkey es el fork open source de Redis, mantenido por la Linux Foundation. MinIO provee almacenamiento S3-compatible on-premise. NATS para mensajería ligera; MQTT para IoT y dispositivos.</small>*
+
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Backup & replicación:</b> ninguna arquitectura de datos es completa sin estrategia de recuperación. pgBackRest para PostgreSQL, restic para backups cifrados, rsync para sincronización.</small>*
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
 - **Métricas & Dashboards:** Beszel (vista 360 ligera), VictoriaMetrics, OpenObserve, Kener.  
@@ -74,7 +88,8 @@
 <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Fast & Secure by Design:</b> bpftrace para diagnóstico rápido en producción; cilium/ebpf en Go para construir herramientas estables y distribuibles; bpftool para inspección. La misma base eBPF sirve a rendimiento y seguridad — no como trade-off, sino como decisión de diseño.</small>*
 
 #### <img src="https://api.iconify.design/bi/cpu-fill.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> IA Soberana & Servicios Cloud
-- **IA Local:** OpenCode, NanoClaw, MCP Server.
+- **IA Local:** OpenCode, NanoClaw, MCP Server.  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>OpenCode: asistente de código local. NanoClaw: runtime ligero para agentes. MCP Server: protocolo de contexto para modelos.</small>*
 - **Cloud Services:** GCP Free Tier (Cloud Run, Firestore, Cloud Storage).
 - **Edge & CDN:** Cloudflare Free Tier (Pages, Workers, D1, R2, KV).
 - **FinOps:** Disciplina financiera aplicada a la ingeniería — free tiers estratégicos, almacenamiento local eficiente y monitoreo activo para evitar sobreaprovisionamiento, sin comprometer resiliencia ni rendimiento.
@@ -106,4 +121,5 @@
 
 > *Fast & Secure by Design.*  
 > *Herramientas **open source** y libros técnicos para la comunidad tech en español.*  
-> *Construido desde cero, con disciplina de ingeniería y pasión por compartir.*
+> *Construido desde cero, con disciplina de ingeniería y pasión por compartir.*  
+> *Enseñar también es asegurar.*
