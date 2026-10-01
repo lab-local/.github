@@ -35,7 +35,7 @@
 
 #### <img src="https://api.iconify.design/bi/shield-lock.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Seguridad, Secretos & Redes
 - **DNS & DHCP:** DNSMASQ.
-- **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnel, WAF, Zero Trust), HAProxy, Keepalived.
+- **Zero Trust & Redes:** WireGuard, Cloudflare (Tunnel, WAF, Zero Trust), Nginx, HAProxy, Keepalived.
 - **Secretos & PKI:** OpenBao, Forgejo Secrets, Smallstep.
 - **Runtime Security (LSM & eBPF):**
   - *LSM:* AppArmor — confinamiento de aplicaciones.
@@ -55,7 +55,7 @@
 - **Bases de datos relacionales:** PostgreSQL (CloudNativePG en K8s), MariaDB.
 - **Bases de datos embebidas:** SQLite.
 - **Caché & estructuras en memoria:** Valkey.
-- **Almacenamiento de objetos:** MinIO e Incus Storage Bucket (S3-compatibles).
+- **Almacenamiento de objetos:** MinIO e Incus Storage Bucket.
 - **Almacenamiento en red:** NFSv4.
 - **Almacenamiento físico:** RAID1/5/6.
 - **Mensajería & Event Bus:** NATS, MQTT (Mosquitto).
@@ -63,7 +63,7 @@
 
 <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>CloudNativePG es el operador que gestiona PostgreSQL en Kubernetes; PostgreSQL es la base de datos subyacente. SQLite se usa para aplicaciones embebidas o edge; no compite con PostgreSQL.</small>*
 
-<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Valkey es el fork open source de Redis, mantenido por la Linux Foundation. MinIO provee almacenamiento S3-compatible on-premise. NATS para mensajería ligera; MQTT para IoT y dispositivos.</small>*
+<img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Valkey es el fork open source de Redis, mantenido por la Linux Foundation. MinIO e Incus Storage Bucket proveen almacenamiento S3-compatible on-premise. NATS para mensajería ligera; MQTT para IoT y dispositivos.</small>*
 
 <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Backup & replicación:</b> ninguna arquitectura de datos es completa sin estrategia de recuperación. pgBackRest para PostgreSQL, restic para backups cifrados, rsync para sincronización.</small>*
 
