@@ -12,14 +12,12 @@
 
 ---
 
-### <img src="https://api.iconify.design/bi/cpu.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Core Stack & Pilares Técnicos
-
 #### <img src="https://api.iconify.design/bi/server.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Plataforma, Virtualización & Contenedores
 - **Virtualización:** Proxmox VE (Debian), Incus (Ubuntu), LXC, KVM/QEMU (VMs).
-- **Contenedores:** Podman + Quadlets, containerd, Docker.  
-  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Podman es el runtime prioritario; Docker se usa solo cuando una herramienta lo requiere explícitamente.</small>*
+- **Contenedores:** Podman + Quadlets, containerd, **CRI-O**, Docker.  
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small><b>Runtimes de contenedores:</b> Podman para uso general (rootless, systemd, Quadlets); CRI-O y containerd como runtimes CRI para Kubernetes; Docker solo cuando una herramienta lo requiere. CRI-O destaca por su minimalismo y menor superficie de ataque, alineado con Fast & Secure by Design.</small>*
 - **Orquestación:** Kubernetes (K3s / MicroK8s).  
-  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>K3s es el orquestador principal; MicroK8s se usa solo para escenarios específicos.</small>*
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>K3s es el orquestador principal; MicroK8s se usa solo para escenarios específicos. CRI-O se usa como runtime CRI ligero cuando se busca mínima superficie de ataque.</small>*
 - **Host OS:** Debian, Ubuntu, Alpine Linux.  
   <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Alpine Linux es el OS base prioritario para LXC, VMs, Podman y Docker siempre que sea técnicamente posible.</small>*
 
