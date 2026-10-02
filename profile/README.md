@@ -84,7 +84,7 @@ Stack documentado en español, +25 libros técnicos en camino, herramientas open
 | **Observabilidad real** | Métricas + logs + kernel + eBPF |
 | **Reproducibilidad** | Todo declarativo, todo documentado |
 | **Educación integrada** | Stack + libros + comunidad |
-| **Escalabilidad** | De 1 servidor a cientos, mismo stack |
+| **Escalabilidad** | De 1 servidor a cientos, mismo stack (Beszel → VictoriaMetrics) |
 
 ---
 
