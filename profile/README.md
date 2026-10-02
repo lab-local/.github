@@ -14,7 +14,7 @@
 
 ### <img src="https://api.iconify.design/bi/lightbulb.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Aplicaciones en la Vida Real
 
-LAB.LOCAL no es solo un stack técnico: es una propuesta para **pequeñas y medianas organizaciones** que quieren infraestructura de producción sin depender de grandes presupuestos ni de la nube propietaria.
+LAB.LOCAL no es solo un stack técnico: es una propuesta open source para pequeñas y medianas organizaciones, y para profesionales que quieren infraestructura de producción sin depender de grandes presupuestos ni de la nube propietaria.
 
 #### <img src="https://api.iconify.design/bi/people.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> ¿Para quién es esto?
 - **Startups y MVPs** que necesitan infraestructura sólida desde el día uno, sin sobreaprovisionar.
@@ -47,6 +47,44 @@ LAB.LOCAL no es solo un stack técnico: es una propuesta para **pequeñas y medi
 6. **Seguridad desde el inicio:** AppArmor, Trivy, Sigstore. No lo dejes para el final.
 
 > *No necesitas todo el stack el primer día. Necesitas el primer paso.*
+
+---
+
+### <img src="https://api.iconify.design/bi/star.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Qué nos hace únicos
+
+No somos un stack más. Somos una propuesta coherente para quien quiere infraestructura moderna sin renunciar a soberanía, seguridad ni rendimiento.
+
+#### <img src="https://api.iconify.design/bi/globe.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Soberanía sin sacrificio
+Híbrido real: on-premise para lo crítico, free tiers estratégicos para lo demás. Sin vendor lock-in, sin facturas impredecibles, sin datos fuera de tu control.
+
+#### <img src="https://api.iconify.design/bi/cpu.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> eBPF como base común
+La misma tecnología que mide rendimiento protege el runtime. bpftrace para diagnóstico, cilium/ebpf para construcción en Go, bpftool para inspección. Rendimiento y seguridad no compiten: coexisten por diseño.
+
+#### <img src="https://api.iconify.design/bi/shield-check.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Minimalismo como seguridad
+Cada herramienta tiene un rol. Sin solapamientos, sin dependencias innecesarias, sin superficie de ataque extra. Podman, CRI-O, containerd: cada uno donde corresponde. Alpine como base cuando es posible.
+
+#### <img src="https://api.iconify.design/bi/arrow-repeat.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Ciclo de ingeniería explícito
+**Construimos → Automatizamos → Observamos → Optimizamos → Aseguramos.** Cada herramienta del stack está mapeada a un paso. No se optimiza lo que no se mide, no se asegura lo que no se entiende.
+
+#### <img src="https://api.iconify.design/bi/people.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Comunidad hispana, conocimiento abierto
+Stack documentado en español, +25 libros técnicos en camino, herramientas open source. No solo construimos infraestructura: construimos comunidad.
+
+---
+
+### <img src="https://api.iconify.design/bi/graph-up-arrow.svg?color=%237d8590" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> Beneficios para infraestructura y plataformas modernas
+
+| Beneficio | Cómo se materializa |
+|-----------|---------------------|
+| **Reducción de costos** | Free tiers + hardware propio + FinOps |
+| **Portabilidad real** | OCI + K8s + CO-RE = sin lock-in |
+| **Seguridad en capas** | LSM + eBPF + Supply Chain + Zero Trust |
+| **Rendimiento medible** | eBPF + perf + fio + iperf3 |
+| **Soberanía tecnológica** | Datos y servicios bajo tu control |
+| **Automatización completa** | IaC + GitOps + CI/CD |
+| **Observabilidad real** | Métricas + logs + kernel + eBPF |
+| **Reproducibilidad** | Todo declarativo, todo documentado |
+| **Educación integrada** | Stack + libros + comunidad |
+| **Escalabilidad** | De 1 servidor a cientos, mismo stack |
 
 ---
 
@@ -107,7 +145,7 @@ LAB.LOCAL no es solo un stack técnico: es una propuesta para **pequeñas y medi
 
 #### <img src="https://api.iconify.design/bi/speedometer2.svg?color=%237d8590" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> Observabilidad & Performance
 - **Métricas & Dashboards:** Beszel (vista 360 ligera), VictoriaMetrics, OpenObserve, Kener.  
-  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Beszel: ideal para 1–50 máquinas, simplicidad extrema y bajo consumo. VictoriaMetrics: para escalar a cientos de servidores y consultas complejas con PromQL.</small>*
+  <img src="https://api.iconify.design/bi/info-circle.svg?color=%237d8590" width="14" height="14" style="vertical-align: middle; margin-right: 4px;"> *<small>Beszel es el punto de entrada ideal para flotas de 1 a 50 máquinas (su sweet spot de diseño, con arquitectura de un solo Hub y SQLite para hasta ~100 hosts). Al superar ese umbral, donde el historial y la concurrencia empiezan a tensionar la base de datos embebida, VictoriaMetrics toma el relevo para escalar a cientos o miles de servidores con PromQL.</small>*
 - **Logs:** Rsyslog, syslog-ng.
 - **Kernel Observability:**
   - *Profiling de CPU:* perf.
