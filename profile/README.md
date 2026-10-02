@@ -193,6 +193,15 @@ Stack documentado en español, +25 libros técnicos en camino, herramientas open
 
 ---
 
+<div align="center" style="margin: 40px 0 32px 0;">
+  <img src="https://raw.githubusercontent.com/lab-local/.github/main/profile/L.LOC_Logo_Light.svg#gh-dark-mode-only" 
+       alt="LAB.LOCAL" 
+       width="260">
+  <img src="https://raw.githubusercontent.com/lab-local/.github/main/profile/L.LOC_Logo_Dark.svg#gh-light-mode-only" 
+       alt="LAB.LOCAL" 
+       width="260">
+</div>
+
 > *Fast & Secure by Design.*  
 > *Herramientas **open source** y libros técnicos para la comunidad tech en español.*  
 > *Construido desde cero, con disciplina de ingeniería y pasión por compartir.*  
