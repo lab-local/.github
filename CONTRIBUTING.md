@@ -5,7 +5,7 @@
 Thank you for your interest in contributing! This project is primarily a personal portfolio, but improvements, corrections, and suggestions are always welcome. Whether it's a documentation fix, a better script, or a new diagram, every contribution helps make the LAB.LOCAL ecosystem a more valuable resource.
 
 > **Note:** All code, documentation, and assets related to the infrastructure live in the 
-> [`infrastructure`](https://github.com/lab-local/infrastructure) repository. 
+> [`core-infra`](https://github.com/lab-local/core-infra) repository. 
 > If you're looking to contribute to the infrastructure or scripts, please start there.
 
 ## How to contribute
